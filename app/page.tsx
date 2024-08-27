@@ -25,7 +25,7 @@ export default function Home() {
 
   const { contextSafe } = useGSAP({ scope: container });
 
-  const animation = contextSafe((item, target) => {
+  const animation = contextSafe((item: any, target: { querySelectorAll: { (arg0: string): void; (arg0: string): void; (arg0: string): void; }; }) => {
     var sm = target.querySelectorAll(".site_thumbnail");
     var ltxt = target.querySelectorAll(".left_text");
     var rtxt = target.querySelectorAll(".right_text");
@@ -39,7 +39,7 @@ export default function Home() {
       x: -30
     });
   });
-  const rmanimation = contextSafe((item, target) => {
+  const rmanimation = contextSafe((item: any, target: { querySelectorAll: { (arg0: string): void; (arg0: string): void; (arg0: string): void; }; }) => {
     var sm = target.querySelectorAll(".site_thumbnail");
     var ltxt = target.querySelectorAll(".left_text");
     var rtxt = target.querySelectorAll(".right_text");
