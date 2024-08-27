@@ -31,3 +31,24 @@ body {
     text-wrap: balance;
   }
 }
+
+.site_thumbnail{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    right: 3rem;
+    translate: 0 -50%;
+    rotate: 15deg;
+    opacity: 0;
+    pointer-events: none;
+
+}
+.inner_thumb {
+    position: relative;
+    width: 40rem;
+    scale: .5;
+    opacity: 1;
+    transition-property: translate, opacity;
+    transition: .3s;
+    transition-timing-function: cubic-bezier(.34,1.56,.64,1);
+}
