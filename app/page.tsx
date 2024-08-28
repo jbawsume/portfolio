@@ -12,12 +12,12 @@ gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 const sites = [
-  { id: 1, title: 'RIO', category: 'Web Branding', date: "2022-09-08", link: "https://rionow.co.uk/", img: "/images/rio.png" },
-  { id: 2, title: 'RELX', category: 'Welcome to learning React!', date: "2022-09-08", link: "https://relxvape.co.uk/", img: "/images/relx.png" },
-  { id: 3, title: 'UPSWING', category: 'Welcome to learning React!', date: "2022-09-08", link: "https://upswing.store/", img: "/images/upswing.png" },
-  { id: 4, title: 'PURCOTTON', category: 'Welcome to learning React!', date: "2022-09-08", link: "https://www.purcottonuk.com/", img: "/images/purcotton.png" },
-  { id: 5, title: 'Moringa Dev Corporation', category: 'Welcome to learning React!', date: "2022-09-08", link: "https://moringadevcorporation.com/", img: "/images/moringa.png" },
-  { id: 6, title: 'MoCAT Zambia', category: 'Welcome to learning React!', date: "2022-09-08", link: "https://mocatzambia.com/", img: "/images/mocat.png" },
+  { id: 1, title: 'RIO', category: 'Web Branding,Shopify,Gsap', date: "2024-08-20", link: "https://rionow.co.uk/", img: "/images/rio.png" },
+  { id: 2, title: 'RELX', category: 'Web Branding,Shopify,Gsap', date: "2022-09-08", link: "https://relxvape.co.uk/", img: "/images/relx.png" },
+  { id: 3, title: 'UPSWING', category: 'Web Branding,Shopify,Gsap', date: "2022-09-08", link: "https://upswing.store/", img: "/images/upswing.png" },
+  { id: 4, title: 'PURCOTTON', category: 'Web Branding,Shopify,Gsap', date: "2022-09-08", link: "https://www.purcottonuk.com/", img: "/images/purcotton.png" },
+  { id: 5, title: 'Moringa Dev Corporation', category: 'Web Branding,React,Gsap,Git', date: "2022-09-08", link: "https://moringadevcorporation.com/", img: "/images/moringa.png" },
+  { id: 6, title: 'MoCAT Zambia', category: 'Web Branding,React,Gsap,Git', date: "2022-09-08", link: "https://mocatzambia.com/", img: "/images/mocat.png" },
 ];
 
 export default function Home() {
@@ -56,7 +56,7 @@ export default function Home() {
 
 
   return (
-    <main ref={container} className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main ref={container} className="flex min-h-screen flex-col items-center justify-between p-12 md:p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Full Stack Web Developer
@@ -87,9 +87,9 @@ export default function Home() {
 
             <div className="flex justify-between items-end border-white border-t-2 border-b-2 py-16 text">
               <div className="flex items-baseline gap-10 left_text">
-                <div className="text-5xl">{site.id}</div>
+                <div className="text-lg md:text-5xl">{site.id}</div>
                 <div className="">
-                  <div className="text-6xl">{site.title}</div>
+                  <div className="text-2xl md:text-6xl">{site.title}</div>
                   <div className="mt-6 flex flex-col gap-5">
                     <div className="text-sm opacity-50">Category: <span>{site.id}</span></div>
                     <div className="text-sm opacity-50">Date: {site.date}</div>
@@ -97,7 +97,7 @@ export default function Home() {
 
                 </div>
               </div>
-              <div className="right_text">View More.</div>
+              <div className="right_text text-xs md:text-base">View More.</div>
             </div>
             <div className="site_thumbnail">
               <div className="inner_thumb">
