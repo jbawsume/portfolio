@@ -12,7 +12,7 @@ gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 const sites = [
-  { id: 1, title: 'RIO', category: 'Web Branding,Shopify,Gsap', date: "2024-08-20", link: "https://rionow.co.uk/", img: "/images/rio.png" },
+  { id: 1, title: 'RIO', category: 'Web Branding,Shopify,Gsap.', date: "2024-08-20", link: "https://rionow.co.uk/", img: "/images/rio.png" },
   { id: 2, title: 'RELX', category: 'Web Branding,Shopify,Gsap', date: "2022-09-08", link: "https://relxvape.co.uk/", img: "/images/relx.png" },
   { id: 3, title: 'UPSWING', category: 'Web Branding,Shopify,Gsap', date: "2022-09-08", link: "https://upswing.store/", img: "/images/upswing.png" },
   { id: 4, title: 'PURCOTTON', category: 'Web Branding,Shopify,Gsap', date: "2022-09-08", link: "https://www.purcottonuk.com/", img: "/images/purcotton.png" },
